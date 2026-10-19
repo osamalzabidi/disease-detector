@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "trained_at": "2026-10-19T09:30:21.569510+00:00",
+    "n_samples": 5224,
+    "n_features": 132,
+    "n_classes": 43,
+    "csv_sha256": "a61bcc5847d37b521dde6c69de99cf548a495a4832b9712f1266d3d7e7e27482",
+    "sklearn_version": "1.8.0",
+    "training_seconds": 397.78
+  },
+  "metrics": {
+    "individual": {
+      "svm": {
+        "acc_mean": 0.9944483051875913,
+        "acc_std": 0.0029289279664074267,
+        "f1_mean": 0.9468488400132345
+      },
+      "nb": {
+        "acc_mean": 0.9957996565389428,
+        "acc_std": 0.0027218971274730074,
+        "f1_mean": 0.948596549667921
+      },
+      "rf": {
+        "acc_mean": 0.950890046643605,
+        "acc_std": 0.059526205734638474,
+        "f1_mean": 0.9291650251201174
+      },
+      "hgb": {
+        "acc_mean": 0.8905564660345904,
+        "acc_std": 0.017910121458632747,
+        "f1_mean": 0.7241120752500634
+      }
+    },
+    "ensemble": {
+      "acc_mean": 0.9957996565389428,
+      "acc_std": 0.0027218971274730074,
+      "f1_mean": 0.948596549667921
+    }
+  },
+  "hyperparameters": {
+    "svm": {
+      "svc__kernel": "rbf",
+      "svc__gamma": "scale",
+      "svc__C": 1
+    },
+    "nb": {
+      "var_smoothing": 1e-09
+    },
+    "rf": {
+      "n_estimators": 200,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "max_depth": 20
+    },
+    "hgb": {
+      "min_samples_leaf": 10,
+      "max_iter": 200,
+      "max_depth": 5,
+      "learning_rate": 0.1
+    }
+  }
+}
